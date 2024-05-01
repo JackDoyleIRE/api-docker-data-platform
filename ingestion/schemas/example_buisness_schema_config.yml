@@ -1,0 +1,20 @@
+# Define a YAML configuration file to store endpoint information and database credentials
+# config.yaml
+endpoints:
+  - name: crm_customers
+    endpoint: endpoint_1
+    object: CustomerObject
+    table: mock_company_crm.customers
+    file_path: object_store/crm_customers.json
+  - name: ecommerce_purchases
+    endpoint: endpoint_2
+    object: PurchaseObject
+    table: mock_company_ecommerce.purchases
+    file_path: object_store/ecommerce_purchases.json
+
+database:
+  dbname: mock_company
+  user: postgres
+  password: password
+  host: db
+  port: 5432
